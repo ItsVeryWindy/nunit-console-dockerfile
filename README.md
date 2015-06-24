@@ -10,7 +10,7 @@ nunit-console is part of the [NUnit unit-testing framework](http://www.nunit.org
 # How to use this image
 This image features an entrypoint for nunit-console. Attach a volume containing assemblies and set it as the working directory.
     
-    docker run -v /path/to/assemblies --workdir /path/to/assembles itsverywindy/nunit-console [nunit console arguments]
+    docker run -v "/path/to/assemblies:/test" --workdir /test itsverywindy/nunit-console [nunit console arguments]
 
 # Issues
 
